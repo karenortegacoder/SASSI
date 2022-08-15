@@ -20,7 +20,7 @@ body {
 
   
   .estilo1 {
-    background-color: $color-primario;
+    background-color: green;
   }
   
   .promo {
@@ -358,7 +358,7 @@ body {
     text-align: left;
     font-weight: bold;
   }
-  &:hover {
+  .redes:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }

@@ -1,9 +1,9 @@
 $redes-media:(twitter: red, telegram: blue, facebook:yellow);
 
-@each $name-media, $value-media in $social-media{
+@each $name-media, $value-media in $redes-media{
     .redes-#{$name-media}:hover {
 
-        fill: $valvue-media;
+        fill: $value-media;
         transition: all 0.5s;
     }
 }
@@ -13,7 +13,7 @@ $redes-media:(twitter: red, telegram: blue, facebook:yellow);
 $textoRedes:(color: red, tamfuente: 30px);
 
 .btn-botoon{
-    background-color: bisque= map-get($map:$estilo, $key=color);
-    font-size: map-get( $map:estilo ,$key:tamfuente);
+    background-color: red = map-get($map:$textoRedes, $key=color);
+    font-size: map-get( $map:textoRedes,$key:tamfuente);
 }
 
