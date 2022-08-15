@@ -1,0 +1,13 @@
+ /* EXTEND */
+
+ .primerEstilo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: right;
+}
+
+.segundoEstilo {
+    @extend .primerEstilo;
+    font-size:  35px;
+
+}

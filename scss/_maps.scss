@@ -1,0 +1,19 @@
+$redes-media:(twitter: red, telegram: blue, facebook:yellow);
+
+@each $name-media, $value-media in $social-media{
+    .redes-#{$name-media}:hover {
+
+        fill: $valvue-media;
+        transition: all 0.5s;
+    }
+}
+
+/* MAP - GET*/
+
+$textoRedes:(color: red, tamfuente: 30px);
+
+.btn-botoon{
+    background-color: bisque= map-get($map:$estilo, $key=color);
+    font-size: map-get( $map:estilo ,$key:tamfuente);
+}
+
